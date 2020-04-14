@@ -76,7 +76,7 @@ window.boot = function () {
         cc.loader.downloader._subpackages = settings.subpackages;
 
         cc.view.enableRetina(true);
-        //cc.view.resizeWithBrowserSize(true);
+        cc.view.resizeWithBrowserSize(true);
 
         if (cc.sys.isBrowser) {
             setLoadingDisplay();
@@ -89,12 +89,12 @@ window.boot = function () {
             else if (settings.orientation === 'portrait') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
             }
-           /* cc.view.enableAutoFullScreen([
+            cc.view.enableAutoFullScreen([
                 cc.sys.BROWSER_TYPE_BAIDU,
                 cc.sys.BROWSER_TYPE_WECHAT,
                 cc.sys.BROWSER_TYPE_MOBILE_QQ,
                 cc.sys.BROWSER_TYPE_MIUI,
-            ].indexOf(cc.sys.browserType) < 0);*/
+            ].indexOf(cc.sys.browserType) < 0);
         }
 
         // Limit downloading max concurrent task to 2,
