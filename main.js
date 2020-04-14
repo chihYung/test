@@ -75,26 +75,21 @@ window.boot = function () {
     var onStart = function () {
         cc.loader.downloader._subpackages = settings.subpackages;
 
-        //cc.view.enableRetina(true);
-        //cc.view.resizeWithBrowserSize(true);
+        cc.view.enableRetina(true);
+        cc.view.resizeWithBrowserSize(true);
 
         if (cc.sys.isBrowser) {
             setLoadingDisplay();
         }
 
         if (cc.sys.isMobile) {
-           /* if (settings.orientation === 'landscape') {
+            if (settings.orientation === 'landscape') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
             }
             else if (settings.orientation === 'portrait') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
-            }*/
-            /*cc.view.enableAutoFullScreen([
-                cc.sys.BROWSER_TYPE_BAIDU,
-                cc.sys.BROWSER_TYPE_WECHAT,
-                cc.sys.BROWSER_TYPE_MOBILE_QQ,
-                cc.sys.BROWSER_TYPE_MIUI,
-            ].indexOf(cc.sys.browserType) < 0);*/
+            }
+            cc.view.enableAutoFullScreen(false);
         }
 
         // Limit downloading max concurrent task to 2,
