@@ -83,12 +83,12 @@ window.boot = function () {
         }
 
         if (cc.sys.isMobile) {
-            if (settings.orientation === 'landscape') {
+           /* if (settings.orientation === 'landscape') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
             }
             else if (settings.orientation === 'portrait') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
-            }
+            }*/
             /*cc.view.enableAutoFullScreen([
                 cc.sys.BROWSER_TYPE_BAIDU,
                 cc.sys.BROWSER_TYPE_WECHAT,
