@@ -75,8 +75,8 @@ window.boot = function () {
     var onStart = function () {
         cc.loader.downloader._subpackages = settings.subpackages;
 
-        cc.view.enableRetina(true);
-        cc.view.resizeWithBrowserSize(true);
+        //cc.view.enableRetina(true);
+        //cc.view.resizeWithBrowserSize(true);
 
         if (cc.sys.isBrowser) {
             setLoadingDisplay();
