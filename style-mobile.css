@@ -60,7 +60,24 @@ body {
   -webkit-box-align: center;
   -webkit-box-pack: center;
 }
-
+#mask {
+	position:absolute;
+	z-index:9999;
+	background-color:#C0C0C0;
+	left: 0;
+    top: 0;
+	height:1080px;
+    width:100%;
+	display :none;
+	opacity:0.5;
+}
+ 
+#tip{
+	color:red;
+	text-align:center;
+	float:center;
+	line-height:250px;
+}
 canvas {
   background-color: rgba(0, 0, 0, 0);
 }
